@@ -1,0 +1,10 @@
+node_modules
+data
+.env
+test-results
+backups
+.git
+*.log
+dist
+releases
+local-docker

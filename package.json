@@ -1,0 +1,29 @@
+{
+  "name": "yingyu-nas-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.20.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "node scripts/start.mjs",
+    "init": "node scripts/init.mjs",
+    "seed": "node scripts/seed.mjs",
+    "test": "node --test --test-concurrency=1 tests/api.test.mjs tests/admin.test.mjs",
+    "test:ui": "node tests/browser.mjs",
+    "test:admin-ui": "node tests/admin-browser.mjs",
+    "backup": "node scripts/backup.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "lucide-vue-next": "^0.468.0",
+    "multer": "^2.0.2",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": { "@vitejs/plugin-vue": "^6.0.1", "vite": "^7.1.10", "playwright": "^1.58.2" }
+}
